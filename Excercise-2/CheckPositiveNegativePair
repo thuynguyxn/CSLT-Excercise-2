@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CheckPositiveNegativePair
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Input first integer: ");
+            int a = int.Parse(Console.ReadLine());
+            Console.Write("Input second integer: ");
+            int b = int.Parse(Console.ReadLine());
+
+            bool isOneNegativeOnePositive = (a < 0 && b > 0) || (a > 0 && b < 0);
+
+            Console.WriteLine("Check if one is negative and one is positive:");
+            Console.WriteLine(isOneNegativeOnePositive);
+
+            Console.ReadLine();
+        }
+    }
+}
