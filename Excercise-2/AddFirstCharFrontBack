@@ -1,0 +1,23 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AddFirstCharFrontBack
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Input a string: ");
+            string s = Console.ReadLine();
+
+            char firstChar = s[0];
+
+            Console.WriteLine(firstChar + s + firstChar);
+
+            Console.ReadLine();
+        }
+    }
+}
