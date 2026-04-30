@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CelsiusConverter
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter the amount of Celsius: ");
+            double celSius = double.Parse(Console.ReadLine());
+
+            double keLvin = celSius + 273;
+            double fahRenheit = celSius * 9 / 5 + 32;
+
+            Console.WriteLine($"Kelvin = {keLvin}");
+            Console.WriteLine($"Fahrenheit = {fahRenheit}");
+
+            Console.ReadLine();
+        }
+    }
+}
