@@ -1,0 +1,28 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace SwapTwoNumbers
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter the first number: ");
+            double a = Double.Parse(Console.ReadLine());
+            Console.Write("Enter the second number: ");
+            double b = Double.Parse(Console.ReadLine());
+
+            double c = a;
+            a = b;
+            b = c;
+
+            Console.WriteLine("After Swapping:");
+            Console.WriteLine($"First Number: {a}");
+            Console.WriteLine($"Second Number: {b}");
+            Console.ReadLine();
+        }
+    }
+}
