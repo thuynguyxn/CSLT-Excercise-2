@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace FindLongestWord
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Input a string: ");
+            string s = Console.ReadLine();
+
+            string[] words = s.Split(' ');
+            string longest = "";
+
+            foreach (string w in words)
+            {
+                if (w.Length > longest.Length)
+                    longest = w;
+            }
+
+            Console.WriteLine($"Longest word: {longest}");
+
+            Console.ReadLine();
+        }
+    }
+}
