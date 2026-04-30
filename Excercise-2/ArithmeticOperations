@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ArithmeticOperations
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Input the first number: ");
+            int a = int.Parse(Console.ReadLine());
+            Console.Write("Input the second number: ");
+            int b = int.Parse(Console.ReadLine());
+
+            Console.WriteLine($"{a} + {b} = {a + b}");
+            Console.WriteLine($"{a} - {b} = {a - b}");
+            Console.WriteLine($"{a} x {b} = {a * b}");
+            Console.WriteLine($"{a} / {b} = {a / b}");
+            Console.WriteLine($"{a} mod {b} = {a % b}");
+
+            Console.ReadLine();
+        }
+    }
+}
